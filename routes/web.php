@@ -18,3 +18,20 @@ Route::get('/', function () {
 });
 
 Route::get('/homepage','App\Http\controllers\UserController@index')->name('homepage');
+route::get('/about','App\Http\controllers\UserController@about')->name('about');
+route::get('/service','App\Http\controllers\UserController@service')->name('service');
+route::get('/portofolio','App\Http\controllers\UserController@portofolio')->name('portofolio');
+route::get('/team','App\Http\controllers\UserController@team')->name('team');
+route::get('/pricing','App\Http\controllers\UserController@pricing')->name('pricing');
+route::get('/Blog','App\Http\controllers\UserController@Blog')->name('Blog');
+route::get('/contact','App\Http\controllers\UserController@contact')->name('contact');
+
+
+//admin controller
+
+Route::get('/admin/home','App\Http\controllers\AdminController@index')->name('admin.home');
+
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
