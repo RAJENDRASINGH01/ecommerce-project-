@@ -30,6 +30,12 @@ route::get('/contact','App\Http\controllers\UserController@contact')->name('cont
 //admin controller
 
 Route::get('/admin/home','App\Http\controllers\AdminController@index')->name('admin.home');
+Route::get('/admin/addcategory','App\Http\controllers\AdminController@addcategory')->name('admin.addcategory');
+Route::get('/admin/addproduct','App\Http\controllers\AdminController@addproduct')->name('admin.addproduct');
+
+
+
+
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

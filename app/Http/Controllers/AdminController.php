@@ -11,10 +11,25 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
     public function index()
     {
      return view('admin.adminhome');
     }
+
+   public function addcategory(){
+    return view('admin.addcategory');
+
+   }
+
+    public function addproduct(){
+    return view('admin.addproduct');
+   }
+
+
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -55,6 +70,11 @@ class AdminController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
+
+
+
+
+
     {
         //
     }
@@ -80,5 +100,13 @@ class AdminController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function __Construct(){
+
+
+
+        $this->middleware('auth:web');
+
     }
 }
