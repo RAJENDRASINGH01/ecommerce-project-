@@ -30,11 +30,20 @@ route::get('/contact','App\Http\controllers\UserController@contact')->name('cont
 //admin controller
 
 Route::get('/admin/home','App\Http\controllers\AdminController@index')->name('admin.home');
+
+
 Route::get('/admin/addcategory','App\Http\controllers\AdminController@addcategory')->name('admin.addcategory');
+
 Route::post('/admin/storecategory','App\Http\controllers\AdminController@storecategory')->name('admin.storecategory');
 
-Route::get('/admin/addproduct','App\Http\controllers\AdminController@addproduct')->name('admin.addproduct');
 
+
+
+Route::get('/admin/addproduct','App\Http\Controllers\AdminController@addproduct')->name('admin.addproduct');
+
+Route::post('/admin/storeproduct','App\Http\Controllers\AdminController@storeproduct')->name('admin.storeproduct');
+
+Route::get('/admin/showproduct','App\Http\Controllers\AdminController@showproduct')->name('admin.showproduct');
 
 
 
