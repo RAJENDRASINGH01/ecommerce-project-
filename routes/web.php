@@ -20,7 +20,7 @@ Route::get('/', function () {
 Route::get('/homepage','App\Http\controllers\UserController@index')->name('homepage');
 route::get('/about','App\Http\controllers\UserController@about')->name('about');
 route::get('/service','App\Http\controllers\UserController@service')->name('service');
-route::get('/portofolio','App\Http\controllers\UserController@portofolio')->name('portofolio');
+route::get('/product','App\Http\controllers\UserController@product')->name('product');
 route::get('/team','App\Http\controllers\UserController@team')->name('team');
 route::get('/pricing','App\Http\controllers\UserController@pricing')->name('pricing');
 route::get('/Blog','App\Http\controllers\UserController@Blog')->name('Blog');
@@ -43,7 +43,10 @@ Route::get('/admin/addproduct','App\Http\Controllers\AdminController@addproduct'
 
 Route::post('/admin/storeproduct','App\Http\Controllers\AdminController@storeproduct')->name('admin.storeproduct');
 
-Route::get('/admin/showproduct','App\Http\Controllers\AdminController@showproduct')->name('admin.showproduct');
+Route::get('/admin/showproduct','App\Http\Controllers\AdminController@showproduct')->name('admin.showproduct');	
+
+//showcategory
+Route::get('/admin/showcategory','App\Http\Controllers\AdminController@showcategory')->name('admin.showcategory');	
 
 
 

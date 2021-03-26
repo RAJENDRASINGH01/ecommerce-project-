@@ -24,8 +24,8 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="{{asset('user/assets/img/team/team-2.jpg')}}" alt="" style="width: 200px; height: 200px;">
-              <h4>Rajendra singh</h4>
+              <img src="{{asset('user/assets/img/team/team-2.jpg')}}" alt="">
+              <h4>William Anderson</h4>
               <span>Product Manager</span>
               <p>
                 Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
