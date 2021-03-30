@@ -18,13 +18,15 @@ Route::get('/', function () {
 });
 
 Route::get('/homepage','App\Http\controllers\UserController@index')->name('homepage');
-route::get('/about','App\Http\controllers\UserController@about')->name('about');
-route::get('/service','App\Http\controllers\UserController@service')->name('service');
-route::get('/product','App\Http\controllers\UserController@product')->name('product');
-route::get('/team','App\Http\controllers\UserController@team')->name('team');
-route::get('/pricing','App\Http\controllers\UserController@pricing')->name('pricing');
-route::get('/Blog','App\Http\controllers\UserController@Blog')->name('Blog');
-route::get('/contact','App\Http\controllers\UserController@contact')->name('contact');
+Route::get('/about','App\Http\controllers\UserController@about')->name('about');
+Route::get('/service','App\Http\controllers\UserController@service')->name('service');
+Route::get('/product','App\Http\controllers\UserController@product')->name('product');
+Route::get('/team','App\Http\controllers\UserController@team')->name('team');
+Route::get('/pricing','App\Http\controllers\UserController@pricing')->name('pricing');
+Route::get('/Blog','App\Http\controllers\UserController@Blog')->name('Blog');
+Route::get('/contact','App\Http\controllers\UserController@contact')->name('contact');
+//product detail
+Route::get('/productdetail/{id}','App\Http\Controllers\UserController@productdetail')->name('productdetail');
 
 
 //admin controller

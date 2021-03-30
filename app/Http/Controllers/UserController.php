@@ -41,6 +41,13 @@ public function Blog(){
 public function contact(){
     return view('user.contact');
 }
+
+public function productdetail($id){
+    $detail=Product::find($id);
+    return view('user.productdetail',compact('detail'));
+}
+
+
     /**
      * Show the form for creating a new resource.
      *

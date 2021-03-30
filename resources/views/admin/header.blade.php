@@ -288,9 +288,7 @@
               <li>
                 <a href="#"><i class="icon_clock_alt"></i> Timeline</a>
               </li>
-              <li>
-                <a href="#"><i class="icon_chat_alt"></i> Chats</a>
-              </li>
+             
               <li>
               <form method="POST" action="{{ route('logout') }}">
                     @csrf
@@ -358,11 +356,7 @@
                       </a>
           </li>
           <li>
-            <a class="" href="chart-chartjs.html">
-                          <i class="icon_piechart"></i>
-                          <span>Charts</span>
-
-                      </a>
+           
 
           </li>
 
@@ -385,7 +379,7 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-              <li><a class="" href="profile.html">Profile</a></li>
+              <li><a class="" href="">Profile</a></li>
               <li><a class="" href="login.html"><span>Login Page</span></a></li>
               <li><a class="" href="contact.html"><span>Contact Page</span></a></li>
               <li><a class="" href="blank.html">Blank Page</a></li>
