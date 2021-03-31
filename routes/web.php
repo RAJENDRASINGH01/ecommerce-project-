@@ -27,7 +27,7 @@ Route::get('/Blog','App\Http\controllers\UserController@Blog')->name('Blog');
 Route::get('/contact','App\Http\controllers\UserController@contact')->name('contact');
 //product detail
 Route::get('/productdetail/{id}','App\Http\Controllers\UserController@productdetail')->name('productdetail');
-
+Route::get('/searchresult','App\Http\Controllers\UserController@search')->name('searchproduct');
 
 //admin controller
 

@@ -1,5 +1,5 @@
 @extends('user.layout.master')
-@section ('title','Ecommerce-product')
+@section ('title','Ecommerce-Searchproduct')
 @section('content-section')
 
 
@@ -11,6 +11,7 @@
 </style>
 <main id="main">
 
+   
  <section class="mt-5">
    <div class="container">
    <div class="col-md-8 row">
@@ -25,14 +26,15 @@
             </div>
  </section>
 
+
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio mt-5">
       <div class="container">
 
-       
+        
 
         <div class="row portfolio-container">
-          @foreach($show as $s)
+          @foreach($result as $s)
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="{{asset('admin/upload/products')}}/{{$s->product_image}}" class="img-fluid img" alt="">
